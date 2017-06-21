@@ -1,2 +1,2 @@
 aoe2:
-  wololo: ${wololo}
+  wololo: ${POSTGRESQL_DATABASE}
