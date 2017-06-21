@@ -12,7 +12,7 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index() {
-        return "Greetings from Spring Boot! " + this.wololo;
+        return "Greetings from Spring Boot! " + System.getenv("POSTGRESQL_PASSWORD");
     }
 
 }
