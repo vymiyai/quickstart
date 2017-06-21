@@ -1,2 +1,2 @@
 aoe2:
-  wololo: ${POSTGRESQL_DATABASE}
+  wololo: POSTGRESQL_PASSWORD
