@@ -72,10 +72,6 @@ public class CommandHandler {
 
     @EventSubscriber
     public void onUser(UserJoinEvent event) {
-        // assign new user to the Select Faction role.
-        IRole selectFaction = event.getGuild().getRolesByName("Select Faction").get(0);
-        event.getUser().addRole(selectFaction);
-
         String response = "Pathetic " + event.getUser().mention() + "-sempai <3";
 
         this.sendMessage(event.getGuild().getGeneralChannel(), response);
