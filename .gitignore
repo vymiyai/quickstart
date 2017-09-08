@@ -23,6 +23,7 @@ hs_err_pid*
 
 # stuff that is not code.
 target/
+.springBeans
 
 # Eclipse crap.
 .classpath
@@ -31,4 +32,3 @@ target/
 
 # IntelliJ crap.
 .idea
-.springBeans

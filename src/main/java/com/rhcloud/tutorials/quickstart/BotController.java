@@ -5,14 +5,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloController {
-	
-	@Value("${aoe2.wololo}")
-	private String wololo;
+public class BotController {
+
+    //@Value("${discord.CLIENT_ID}")
+    private String clientId;
+
+    //@Value("${discord.CLIENT_SECRET}")
+    private String clientSecret;
 
     @RequestMapping("/")
     public String index() {
-        return "Greetings from Spring Boot! " + System.getenv("POSTGRESQL_PASSWORD");
+        String response = "Bot is probably alive.";
+        return response;
     }
 
 }
