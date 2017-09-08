@@ -1,6 +1,9 @@
 # quickstart
 Discord bot template with Discord4J and Spring.
 
+## Requirements:
+Maven and Docker.
+
 ## TL;DR
 ### Build and deploy:
 mvn clean package docker:build
