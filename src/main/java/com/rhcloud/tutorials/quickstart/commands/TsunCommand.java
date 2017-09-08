@@ -5,20 +5,20 @@ import org.springframework.stereotype.Component;
 import sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent;
 
 @Component
-public class ExampleCommand implements IBotCommand {
+public class TsunCommand implements IBotCommand {
 
     @Override
     public String execute(String[] tokenizedMessage, MessageReceivedEvent event) {
-        return "This is an example command output.";
+        return "I hate you, " + event.getAuthor().mention() + "-sempai!";
     }
 
     @Override
     public String getCommandName() {
-        return "!example";
+        return "!tsun";
     }
 
     @Override
     public String getCommandDescription() {
-        return "Type !example to get an example command output.";
+        return "Type !tsun for harsh words.";
     }
 }

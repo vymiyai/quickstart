@@ -76,7 +76,7 @@ public class CommandHandler {
         IRole selectFaction = event.getGuild().getRolesByName("Select Faction").get(0);
         event.getUser().addRole(selectFaction);
 
-        String response = "Greetings, new user.";
+        String response = "Pathetic " + event.getUser().mention() + "-sempai <3";
 
         this.sendMessage(event.getGuild().getGeneralChannel(), response);
     }
